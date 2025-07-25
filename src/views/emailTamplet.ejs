@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Amitav's Family</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        text-align: center;
+        color: #3cacae;
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        font-size: 16px;
+        color: #333333;
+        line-height: 1.6;
+      }
+
+      .footer {
+        font-size: 12px;
+        color: #999999;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3cacae;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+      }
+
+      .cta-button:hover {
+        background-color: #34989a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Welcome to Amitav's Family, <%= name %>!</div>
+
+      <div class="content">
+        <p>
+          We're thrilled to have you join <strong>Amitav's Family</strong> — a community built on health, strength, and support. Whether you're just starting your fitness journey or looking to push further, we’re here to help you every step of the way.
+        </p>
+
+        <p>
+          Log in now to explore personalized workouts, expert trainers, and a space that feels like home.
+        </p>
+
+        <a href="https://yourappdomain.com/login" class="cta-button">Log In to Your Account</a>
+      </div>
+
+      <div class="footer">
+        <p>If you did not sign up for Amitav's Family, you can safely ignore this email.</p>
+        <p>Welcome aboard — let’s grow stronger, together 💪</p>
+      </div>
+    </div>
+  </body>
+</html>
