@@ -26,7 +26,7 @@ app.use((req, res, next) => {
   next();
 });
 
-const buildPath = path.join(__dirname, "../amitav-client/build");
+const buildPath = path.join(__dirname, "../../amitav-client/build");
 
 sequelize
   .authenticate()
@@ -39,7 +39,11 @@ sequelize
   });
 
 app.use("/api", require("./routes"));
-// app.use(express.static(buildPath));
+app.use(express.static(buildPath));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(buildPath, "index.html"));
+});
 
 app.listen(port, () => {
   console.log("Your Server running at " + port);
