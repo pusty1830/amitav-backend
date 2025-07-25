@@ -26,7 +26,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// const buildPath = path.join(__dirname, "../build");
+const buildPath = path.join(__dirname, "../amitav-client/build");
 
 sequelize
   .authenticate()
