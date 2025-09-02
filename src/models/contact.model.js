@@ -10,10 +10,7 @@ const Contact = sequelizeConfig.define(
       type: Sequelize.INTEGER,
       autoIncrement: true,
     },
-    title: {
-      allowNull: false,
-      type: Sequelize.STRING(255),
-    },
+
     name: {
       allowNull: false,
       type: Sequelize.STRING(255),
